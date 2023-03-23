@@ -1,4 +1,5 @@
 src/common/__pycache__
+marpThemes
 *.gz
 *.pkl
 *.bkp
