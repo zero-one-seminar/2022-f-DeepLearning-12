@@ -209,4 +209,19 @@ Xavierの初期値
 
 ---
 # MNISTによる重み初期値の比較
+
+<div style="float:left;width:50%;">
+
 ソースコード:`\src\weight_init_compare.ipynb`
+
+図を見るとHeの初期値が最も速く収束していて、Xavierはそこそこ、0.01の正規分布にいたってはほとんど学習できていないことがわかる
+
+</div>
+<div style="text-align:center;float:right;width:50%;">
+
+![h:390](imgs/fig8.png)
+初期値ごとのLossの推移
+
+</div>
+
+---
