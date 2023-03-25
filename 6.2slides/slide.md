@@ -126,7 +126,7 @@ $$
 
 </div>
 
-ソースコード:`\src\weight_init_activation_histogram.ipynb`
+ソースコード:`\6.2src\weight_init_activation_histogram.ipynb`
 
 
 ---
@@ -209,7 +209,7 @@ Heの初期値
 
 <div style="float:left;width:50%;">
 
-ソースコード:`\src\weight_init_compare.ipynb`
+ソースコード:`\6.2src\weight_init_compare.ipynb`
 
 図を見るとHeの初期値が最も速く収束していて、Xavierはそこそこ、0.01の正規分布にいたってはほとんど学習できていないことがわかる
 
@@ -236,8 +236,9 @@ Heの初期値
 ---
 # Batch Normalizationのアルゴリズム
 Batch Normalizationの利点
+
 - 学習が速くなる(学習係数を大きくできる)
-- 初期値にそれほど依存しない
-<!-- ロバストであるという -->
+- 初期値にそれほど依存しない<!-- ロバストであるという -->
 - 過学習を抑制する(Dropoutなどの必要性を減らす)
 
+ソースコード:`\6.2src\batch_norm_test.ipynb`
