@@ -17,18 +17,13 @@ paginate: true
 
 ---
 <!-- class: slides  -->
-# todo
-batch Normalization の表が崩れているのを修正
-
----
-<!-- class: slides  -->
 # 重みの初期値
 ニューラルネットワークの性能は初期値によっても左右される。
 
-- よい初期値とは何か(初期値の望ましい性質)
-  - 重みの値を小さくできれば、過学習を起きにくくできる
+- よい初期値の考察
+  - 重みが大きくなると過学習を起こす傾向にある
   - 小さい値からスタートするのがよいのでは?
-  <!-- - 重みが大きくなると過学習を起こす傾向にある -->
+  <!-- -  -->
   <!-- - 過学習を抑え汎化性能を高めたい -->
 
 今まで使っていた初期値
@@ -49,6 +44,7 @@ $y = \sigma(a_3w_1 + a_4w_2 + b_3)$
 対称性より
 $
 \frac{\partial L}{\partial a_1} = \frac{\partial L}{\partial a_2},
+\frac{\partial L}{\partial a_3} = \frac{\partial L}{\partial a_4},
 \frac{\partial L}{\partial b_1} = \frac{\partial L}{\partial b_2}
 $
 
@@ -202,7 +198,7 @@ Kaiming He(何恺明)らが提案した「Heの初期値」
 <div style="text-align:center;float:right;width:50%;">
 
 ![h:390](imgs/fig7.png)
-Xavierの初期値
+Heの初期値
 
 </div>
 <!-- 補足:勾配消失は層を増やしていくほどしんこくになる。reluにXavierの初期値を適用すると観察しやすい -->
@@ -223,5 +219,3 @@ Xavierの初期値
 初期値ごとのLossの推移
 
 </div>
-
----
